@@ -1,0 +1,8 @@
+student:
+  name: qingyezhu
+  address:
+    country: china
+    province: bj
+teacher:
+  name: zhu-t
+  age: 23

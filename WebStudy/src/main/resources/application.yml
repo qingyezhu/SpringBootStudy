@@ -1,0 +1,7 @@
+student:
+  name: qingyezhu
+  age: 18
+  address:
+    country: china
+    province: shanghai
+    city: shanghai

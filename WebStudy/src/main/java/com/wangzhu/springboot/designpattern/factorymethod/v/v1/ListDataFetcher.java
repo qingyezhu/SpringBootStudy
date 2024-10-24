@@ -1,0 +1,7 @@
+package com.wangzhu.springboot.designpattern.factorymethod.v.v1;
+
+/**
+ * Created by wangzhu on 2024/9/25 17:26.
+ **/
+public interface ListDataFetcher extends Strategy<String> {
+}

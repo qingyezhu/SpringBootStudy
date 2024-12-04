@@ -1,7 +1,5 @@
 package com.wangzhu.leetcode;
 
-import java.util.List;
-
 /**
  * Created by wangzhu on 2024/10/18 12:16.
  **/

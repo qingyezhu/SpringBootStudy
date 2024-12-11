@@ -10,17 +10,17 @@ import org.springframework.context.annotation.Configuration;
 public class FactoryConfig {
 
     @Bean
-    public StrategyFactoryV2<String, FormDataHandler> formDataHandlerFactory() {
+    public StrategyFactoryV2<String, FormDataHandler> formDataHandlerFactoryV2() {
         return new StrategyFactoryV2<>(FormDataHandler.class);
     }
 
     @Bean
-    public StrategyFactoryV2<FormItemTypeEnum, FormItemConverter> formItemConverterFactory() {
+    public StrategyFactoryV2<FormItemTypeEnum, FormItemConverter> formItemConverterFactoryV2() {
         return new StrategyFactoryV2<>(FormItemConverter.class);
     }
 
     @Bean
-    public StrategyFactoryV2<String, ListDataFetcher> listDataFetcherFactory() {
+    public StrategyFactoryV2<String, ListDataFetcher> listDataFetcherFactoryV2() {
         return new StrategyFactoryV2<>(ListDataFetcher.class);
     }
 }

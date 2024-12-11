@@ -17,7 +17,7 @@ public class FormItemConverterFactory {
         return CONVERTER_MAP.get(type);
     }
 
-    @Autowired
+    @Autowired(required = false)
     public void setConverters(List<FormItemConverter> converters) {
         for (final FormItemConverter converter : converters) {
             CONVERTER_MAP.put(converter.getType(), converter);

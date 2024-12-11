@@ -2,9 +2,11 @@ package com.wangzhu.springboot.student;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
 
 /**
  * springboot2.7之前需要写一个spring.factories，放到resources/META-INF目录下<br/>
@@ -12,6 +14,7 @@ import org.springframework.context.annotation.Configuration;
  * Created by wangz on 2024/9/9 16:44.
  **/
 @Configuration
+@PropertySource("classpath:start-config.properties")
 @EnableConfigurationProperties(StudentProperty.class)
 public class StudentAutoConfiguration {
     private static final Logger logger = LoggerFactory.getLogger(StudentAutoConfiguration.class);

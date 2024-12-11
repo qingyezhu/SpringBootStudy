@@ -1,0 +1,9 @@
+student:
+  name: qingyezhu01
+  age: 10
+  address:
+    country: china
+    province: bj
+teacher:
+  name: qingyezhu02
+  age: 20

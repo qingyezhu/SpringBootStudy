@@ -18,7 +18,7 @@ public class FormDataHandlerFactory {
         return FORM_DATA_HANDLER_MAP.get(formCode);
     }
 
-    @Autowired
+    @Autowired(required = false)
     public void setFormDataHandlers(List<FormDataHandler> handlers) {
         for (final FormDataHandler handler : handlers) {
             FORM_DATA_HANDLER_MAP.put(handler.getFormCode(), handler);

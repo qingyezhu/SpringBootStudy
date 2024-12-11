@@ -33,6 +33,16 @@
 
     <dependency>
       <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-jdbc</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>8.0.13</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-test</artifactId>
       <scope>test</scope>
     </dependency>
@@ -77,6 +87,15 @@
       <artifactId>curator-recipes</artifactId>
       <version>5.4.0</version>
     </dependency>
+
+
+    <!--高效压缩位图 Roaring Bitmap RBM-->
+    <dependency>
+      <groupId>org.roaringbitmap</groupId>
+      <artifactId>RoaringBitmap</artifactId>
+      <version>1.3.0</version>
+    </dependency>
+
 
   </dependencies>
   <build>

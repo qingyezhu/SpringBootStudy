@@ -4,6 +4,8 @@ package com.wangzhu.leetcode;
  * Created by wangzhu on 2024/10/23 17:49.
  **/
 public class PredecessorAndSuccessor {
+
+    // 二叉树中序遍历下的前驱和后驱
     static class Node {
         Node parent, left, right;
         int value;

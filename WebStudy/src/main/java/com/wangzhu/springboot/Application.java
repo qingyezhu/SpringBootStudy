@@ -1,5 +1,7 @@
 package com.wangzhu.springboot;
 
+import com.google.common.util.concurrent.RateLimiter;
+import org.slf4j.Logger;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -37,9 +39,15 @@ public class Application {
             }
             //System.out.println(context.getEnvironment());
 
-            ProtectionDomain protectionDomain = ApplicationContext.class.getProtectionDomain();
-            CodeSource codeSource = protectionDomain.getCodeSource();
-            System.out.println(codeSource.getLocation());
+            printCodeSource(RateLimiter.class);
+            printCodeSource(Logger.class);
         };
+    }
+
+    void printCodeSource(Class<?> clazz) {
+        ProtectionDomain protectionDomain = clazz.getProtectionDomain();
+        CodeSource codeSource = protectionDomain.getCodeSource();
+        System.out.println(codeSource.getLocation());
+
     }
 }
